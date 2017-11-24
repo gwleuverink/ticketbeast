@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "76036da3b5b55b91dbe1e1affa01bf9e",
+    "content-hash": "50e4deb4c8728b5460bf609f167ef2b2",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -741,6 +741,49 @@
                 "php"
             ],
             "time": "2017-11-04T11:48:34+00:00"
+        },
+        {
+            "name": "nothingworks/blade-svg",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamwathan/blade-svg.git",
+                "reference": "3ec8f970a4145350bd99cb021b1ea8a1833647ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamwathan/blade-svg/zipball/3ec8f970a4145350bd99cb021b1ea8a1833647ce",
+                "reference": "3ec8f970a4145350bd99cb021b1ea8a1833647ce",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "^5.3",
+                "illuminate/support": "^5.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "^5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BladeSvg\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "time": "2017-04-29T15:27:41+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1878,6 +1921,54 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "zondicons/blade-bridge",
+            "version": "v0.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dukestreetstudio/zondicons-blade-bridge.git",
+                "reference": "318fdedb2395ae5d34b89dc37b81734bb8cc2d1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dukestreetstudio/zondicons-blade-bridge/zipball/318fdedb2395ae5d34b89dc37b81734bb8cc2d1f",
+                "reference": "318fdedb2395ae5d34b89dc37b81734bb8cc2d1f",
+                "shasum": ""
+            },
+            "require": {
+                "nothingworks/blade-svg": "^0.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Zondicons\\ZondiconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zondicons\\": "src/"
+                },
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                },
+                {
+                    "name": "Steve Schoger",
+                    "email": "sm.schoger@gmail.com"
+                }
+            ],
+            "description": "Easily integrate the Zondicons icon set into your Laravel applications.",
+            "time": "2017-09-08T17:23:31+00:00"
         }
     ],
     "packages-dev": [
